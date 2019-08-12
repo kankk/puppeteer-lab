@@ -5,6 +5,7 @@ https://pptr.dev/#?product=Puppeteer&version=v1.19.0&show=api-class-puppeteer
 # Methods
 
 ## puppeteer.connect(options)
+
 此方法将 Puppeteer 添加到已有的 Chromium 实例
 
 ## puppeteer.createBrowerFetcher([options])
@@ -12,6 +13,7 @@ https://pptr.dev/#?product=Puppeteer&version=v1.19.0&show=api-class-puppeteer
 * return<BrowserFetcher>
 
 ## puppeteer.defaultArgs([options])
+
 Chromium 启动时使用的默认参数.
 
 ## puppeteer.executablePath()

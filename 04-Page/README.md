@@ -1,10 +1,12 @@
 # Class
+
 * 继承: `EventEmitter`
 
 Page 提供操作一个 tab 或者 extension background page 的方法.
 一个 `Browser` 实例可以有多个 `Page` 实例
 
 # Events
+
 * page.on('close'): 当页面关闭时触发
 * page.on('console'): 当页面 JavaScript 代码调用了 `console` 的某个方法
 * page.on('dialog'): 当 JavaScript 对话框出现的时候触发
@@ -24,6 +26,7 @@ Page 提供操作一个 tab 或者 extension background page 的方法.
 * page.on('workerdestoryed'): 当页面终止相应的 `WebWorker` 时触发
 
 # Methods
+
 * page.$(selector): 此方法在页面内执行 document.querySelector, 如果没有匹配到指定选择器, 返回值是 `null`
 * page.$$(selector): 此方法在页面内执行 document.querySelectorAll, 如果没有匹配到指定选择器, 返回值是 `[]`
 * page.$$eval(selector, pageFunction[, ...args]): 此方法在页面内执行 Array.from(document.querySelectorAll(selector))然后把匹配到的元素数组作为第一个参数传给 pageFunction
